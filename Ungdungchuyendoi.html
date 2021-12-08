@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ung Dung Chuyen Doi Tien Te</title>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>
+                    <p><label>Amount</label></p>
+                    <input type="Number" name="1" id="Soluong">
+                </th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th>
+                    <p><label> From Currency</label></p>
+                    <select id="ct1">
+                        <option value="USD">USD</option>
+                        <option value="VietNam">VietNam</option>
+
+                    </select>
+                </th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th>
+                    <p><label> To Currency</label></p>
+                    <select id="ct2">
+                        <option value="VietNam">VietNam</option>
+                        <option value="USD" checked>USD</option>
+
+                    </select>
+                </th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th>
+                    <p><label>&nbsp;</label></p>
+                    <input type="button" style="background-color: blue; color: white;" onclick="chuyentien()" value="Convert"></input>
+                </th>
+            </tr>
+        </table>
+    </form>
+    <form>
+        <P style="color: blue;" id="ketqua"> Result: </P>
+    </form>
+</body>
+<script>
+    function chuyentien() {
+        let giatrivao = document.getElementById('Soluong').value;
+        let ct1 = document.getElementById('ct1').value;
+        let ct2 = document.getElementById('ct2').value;
+
+        if (ct1 == "VietNam" && ct2 == "USD") {
+            //alert(giatrivao/23000)
+            document.getElementById("ketqua").innerHTML+=(giatrivao / 23000);
+            document.getElementById("soluong").value = "";
+        }
+        else {
+            if (ct1 == "USD" && ct2 == "VietNam") {
+                //alert(giatrivao * 23000);
+                document.getElementById("ketqua").innerHTML+=(giatrivao * 23000);
+                document.getElementById("soluong").value = "";
+            }
+            else {
+                alert('Moi Chon lai gia tri');
+            }
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>A web Page</h1>
+    <p id="demo">A paragraph</p>
+    <button type="button" onclick="myFunction()"> Try it</button>
+
+    <script src="onclick.js">
+    </script>
+    <br>
+    <button onclick="alert('Xin chao ban!');">click me </button>
+    <br>
+    <h2>What Can JavaScript Do?</h2>
+    <p>JavaScript can change HTML attriduter.</p>
+    <p>In this case JavaScript change the src (source) attribute of an image</p>
+    <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'"> turn on the
+        light</button>
+    <img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the
+        light</button>
+        <br>
+        <!-- Thuc Hanh Hien Thi Dau Ra -->
+        <!-- Bai Tap 1 -->
+        <button type="button" onclick="showMessage();">Click Me!</button>
+        <script>
+            function showMessage() {
+                alert('Xin Chao');
+                
+            }
+        </script>
+        <br>
+        <!-- Bai Tap 2 -->
+        <div id="messageDiv"></div>
+        <button type="button" onclick="showMessage();"> Click Me</button>
+        <script>
+            function showMessage() {
+                document.getElementById('messageDiv').innerHTML ="Xin Chao!";
+                
+            }
+        </script>
+        <br>
+        <br>
+        <!-- Bai Tap 3 -->
+        <button type="button" onclick="showMessage();"> Click Me!</button>
+        <script>
+            function ShowMessage() {
+                document.write('Xin Chao!');
+            }      
+        </script>
+        <br>
+        <!-- Bai Tap 4  -->
+        <button type="button" onclick="showMessage();"> Click Me</button>
+        <script>
+            function showMessade() {
+                console.log('Xin Chao!');
+                
+            }
+        </script>
+ <!--  
+     let foo = 42; // foo la mot so 
+      foo = "bar"; // bay gio foo la mot chuoi ky tu
+      foo = true; // bay gio foo la mot luan ly 
+ -->
+
+</body>
+
+
+</html>  

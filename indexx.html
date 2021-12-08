@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--  Sự Kiện Onchange -->
+    <p>Select a new car form the list</p>
+
+    <select id=" myselect" onchange="do_something()">
+        <option value="Audi"> Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Mercedes">Mecerdes</option>
+        <option value="Ferrari">Ferrari</option>
+    </select>
+    <script>
+        function do_something() {
+            var selectedvalue = document.getElementById("myselect").value;
+            alert(selectedvalue);
+        }
+        var selectedElement = document.getElementById("myselect");
+        selectedElement.addEventListener("change", changefunction);
+        function changefunction() {
+            var selectedvalue = document.getElementById("mycelect").value;
+
+        }
+    </script>
+    <br><br><br>
+    <!-- Su Kien onmouseover va onmouseout -->
+    <p id="demo"> this a text</p>
+    <script>
+        var demo = document.getElementById("demo")
+        demo.addEventListener("mouseover", mouseout);
+        demo.addEventListener("mouseout", mouseover);
+        
+        function mouseover() {
+            document.getElementById("demo").style.color="red";
+        }
+        function mouseout() {
+            document.getElementById("demo").style.color="bacl;"
+            
+        }
+    </script>
+<br>
+<br>
+<!-- Su Kien onclick -->
+<p onclick="do_something">click me</p>
+<script>
+    function do_something() {
+        alert("hello world");
+        
+    }
+</script>
+</body>
+
+</html>

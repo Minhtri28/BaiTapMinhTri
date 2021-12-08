@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" action="simpleform.html">
+        <h2> order form</h2>
+        <p>What wold you like to buy></p>
+        <select>
+            <option value="  ">A</option>
+            <option> B (+ 0.5$ </option>
+            <option> C (+ 0.5$</option>
+        </select>
+        <p>How many would you like to order?</p>
+        <input type="radio" name="rd"/> 1 - $10 <br> 
+        <input type="radio" name="rd"/> 2 - 20$ <br>
+        <input type="radio" name="rd"/> 3 - 25$ <br>
+        <p>Name <span style="color:red">*</span></p>
+        <input type="text" name="firstname" placeholder="firstname" size="15">
+        <input type="text" name="lastname" placeholder="Lastname" size="15">
+        <p>Email</p>
+        <input type="text" name="Email" size="35">
+        <p>Phone Number</p>
+        <input type="text" name="Phone1" size="5">
+        <input type="text" name="Phone2" size="5">
+        <input type="text" name="Phone3" size="5">
+        <p><input type="button" name="btSubmit" value="Submit"></p>
+        <style>
+            .wufoo {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        </style>
+        <form method="get" action="simpleform" class="wuf"></form>
+
+    </form>
+    <!--  TÌm kiếm Google -->
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <input type="submit" value="Tìm Kiếm">
+    </form>
+</body>
+</html>
