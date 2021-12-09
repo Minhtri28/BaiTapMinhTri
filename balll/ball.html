@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bong
+
+    </title>
+</head>
+
+<body>
+    <form>
+        <img id="myball" src="rolling-football-ball-gif.gif" style="height: 500px;" />
+        <p><h1>Click button below to move the inmage to right</h1></p>
+        <input type="button" value="Click Me" onclick="moveRight();" style="height: 200px;">
+    </form>
+    <script>
+        let imgObj = null;
+        imgObj = document.getElementById('myball');
+        function init() {
+            imgObj = document.getElementById('myball');
+            imgObj.style.position = 'relative';
+            imgObj.style.left = '0px';
+        }
+
+        function moveRight() {
+            imgObj.style.left = parseInt(imgObj.style.left) + 100 + 'px';
+        }
+        window.onload = init;
+
+    </script>
+</body>
+
+</html>
