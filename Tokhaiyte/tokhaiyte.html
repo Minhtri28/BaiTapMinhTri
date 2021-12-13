@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tờ Khai Y Tế</title>
+    <style>
+        body {
+            background-image: url(xanhchuoi.jpg);
+        }
+    </style>
+    <div align="center">
+        <h1>TỜ KHAI Y TẾ ĐỐI VỚI NGƯỜI NHẬP CẢNH</h1>
+    </div>
+    <div align="center" style="background-origin: inherit;">
+
+        <b>ĐÂY LÀ TÀI LIỆU QUAN TRỌNG, THÔNG TIN CỦA ANH/CHỊ SẼ GIÚP CƠ QUAN Y TẾ LIÊN LẠC KHI CẦN THIẾT ĐỂ PHÒNG
+            CHỐNG DỊCH BỆNH TRUYỀN NHIỄM</b>
+        <br>
+        <BR></BR>
+        <b style="color: red;">Khuyến cáo: Khai báo thông tin sai là vi phạm pháp luật VIệt Nam và có thể xử lý hình
+            sự</b>
+    </div> <br>
+
+
+</head>
+
+<body>
+    <div align="center">
+        <form action="home.htm" method="post">
+
+            <table>
+                <tr>
+                    <th align="left">
+                        Đối tượng (*)<br>
+                        <select name="Chon" id="" required>
+                            <option value="Chon">Chuyên gia</option>
+                            <option value="Chon">Người VN</option>
+                            <option value="Chon">Học Sinh/Sinh Viên</option>
+                            <option value="Chon">Khác</option>
+                        </select>
+                    </th>
+                    <th align="right">
+                        <label>Cửa Khẩu(*)</label><br>
+                        <select name="chon1" id="" required>
+                            <option value="chon1">SG</option>
+                            <option value="chon1">HN</option>
+                            <option value="chon1">Hue</option>
+                            <option value="chon1">DaNang</option>
+                            <option value="chon1">Da Lat</option>
+                            <option value="chon1">Vinh</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Họ tên(Ghi chữ IN HOA)<br>
+                        <input type="text" name="Hoten" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Năm sinh<br>
+                        <select name="year" id="">
+                            <option name="year" value="1990" selected>1990 </option>
+                            <option name="year" value="1991">1991</option>
+                            <option name="year" value="1992">1992</option>
+                            <option name="year" value="1993">1993</option>
+                            <option name="year" value="1994">1994</option>
+                            <option name="year" value="1995">1995</option>
+                            <option name="year" value="1996">1996</option>
+    
+                        </select>
+                    </td>
+                    <td>
+                        Giới tính<br>
+                        <select name="Gender" id="">
+                            <option value="Gender">Nam</option>
+                            <option value="Gender">Nữ</option>
+                            <option value="Gender">Giới tính thứ 3</option>
+                        </select>
+                    </td>
+                    <td>
+                        Quốc tịch:<br>
+                        <select name="national" id="">
+                            <option value="national">VN</option>
+                            <option value="national">Laos</option>
+                            <option value="national">Sinn</option>
+                            <option value="national">TQ</option>
+                            <option value="national">America</option>
+                            <option value="national">janpanese</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Số CMND/Hộ chiếu/CCCD:<br>
+                        <input type="text" name="passport" required>
+                    </td>
+    
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Thông tin đi lại:</label><br>
+                        <input type="radio" name="engine" checked> Tàu bay
+                        <input type="radio" name="engine"> Tàu thuyền
+                        <input type="radio" name="engine"> Ô tô
+                        <input type="radio" name="engine"> Khác (Ghi rõ)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for=""> Số hiệu phương tiện</label><br>
+                        <input type="text" name="phtien" placeholder="VdVN0123">
+                    </td>
+                    <td>
+                        <label>số ghế</label><br>
+                        <input type="text" name="chair">
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Ngày khởi hành(*)</label>
+                        <input type="date" name="departure" required>
+                    </td>
+                    <td>
+                        <label for="">Ngày nhập cảnh(*)</label>
+                        <input type="date" name="entryday" required>
+                    </td>
+                </tr>
+                <tr>
+    
+                    <th><label for="">Địa điểm khởi hành(tỉnh/quốc gia)</label></th>
+                </tr>
+                <tr>
+                    <th> <label for="">Quốc Gia/Vùng lãnh thổ</label>
+                        <input type="text" name="prrovince" required>
+                    </th>
+                    </th>
+                    <th><label for="">Tỉnh(*)</label>
+                        <input type="Text" name="province" required>
+                    </th>
+                </tr>
+    
+            </table>
+            Trong vòng 14 ngày qua, ANh/Chị có đến quốc gia/vùng lãnh thổ nào?(*)<br>
+            <textarea rows="5" cols="100"></textarea>
+            <table>
+                <th>Nơi lưu trú sau cách ly tập trung</th>
+                <tr>
+                    <td>Tỉnh/Thành<br>
+                        <select>
+                            <option>Chọn</option>
+                            <option>SG</option>
+                            <option>VN</option>
+                            <option>Hue</option>
+                            <option>Danang</option>
+                        </select>
+                    </td>
+                    <td>
+                        Quận/huyện(*)<br>
+                        <select>
+                            <option aria-placeholder="Chọn"></option>
+                            <option>QUận A</option>
+                            <option>QUận B</option>
+                            <option>QUận C</option>
+                        </select>
+                    </td>
+                    <td>Phường/xã(*)
+                        <select name="ward" id="">
+                            <option>Chọn</option>
+                            <option>Xã</option>
+                            <option>Xã 1</option>
+                            <option>Xã 2</option>
+                            <option>Xã 3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ lưu trú sau cách ly(*)<br>
+                        <input type="text" name="adresscachly"></td>
+                </tr>
+            </table>
+            <table>
+                <caption><strong>Địa chỉ liên lạc tại Việt Nam</strong></caption>
+                <tr>
+                    <td>Tỉnh/thành<br>
+                        <select>
+                            <option>-Chọn-</option>
+                            <option>Tỉnh A</option>
+                            <option>T B</option>
+                            <option>T C</option>
+                            <option>T D</option>
+                        </select></td>
+                    <td>Quận/huyện<br>
+                        <select>
+                            <option>Chọn</option>
+                            <option>Quận A</option>
+                            <option>Q B</option>
+                            <option>Q C</option>
+                            <option>Q D</option>
+                        </select></td>
+                    <td>Phường/xã<br>
+                        <select>
+                            <option>Chọn</option>
+                            <option>Phường A</option>
+                            <option>Phường B</option>
+                            <option>Phường C</option>
+                            <option>Phường D</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ nơi ở tại Việt Nam<br>
+                        <input type="text" name="adressnoio"></td>
+                </tr>
+                <tr>
+                    <td>Điện thoại<br>
+                        <input type="tel" name="phone"></td>
+                </tr>
+                <tr>
+                    <td>Email<br>
+                        <input type="email" required></td>
+                </tr>
+            </table>
+            <p>Trong vòng 14 ngày (tính đến thời điểm làm thủ tục xuất cảnh, nhập cảnh, quá cảnh) Anh/Chị có thấy xuất hiện
+                dấu hiệu nào sau đây không? (*</p>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <th>Triệu Chứng</th>
+                    <th>Có</th>
+                    <th>Không</th>
+                    <th>Triệu Chứng</th>
+                    <th>Có</th>
+                    <th>Không</th>
+                </tr>
+                <tr>
+                    <td>Sốt (*)</td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td>Nôn/Buồn Nôn (*)</td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                </tr>
+                <tr>
+                    <td>Ho</td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td>Tiêu chảy (*)</td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                </tr>
+                <tr>
+                    <td>Khó Thở</td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td>Cuất huyết ngoài da (*)</td>
+                    <td><input type="radio"></td>
+                    <td> <input type="radio"> </td>
+                </tr>
+                <tr>
+                    <td>Đau họng</td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td>Nổi bang ngoài da</td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+    
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+            </table>
+            <br>
+            <div>
+                <p>Danh sách vắc-xin hoặc sinh phẩm được sử dụng</p>
+                <input type="text"><br>
+            </div>
+            <p>Lịch sử phơi nhiểm: Trong vòng 14 ngày qua, Anh.Chị có (*)</p>
+            <table border="1">
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Có</th>
+                    <th>Không</th>
+                </tr>
+                <tr>
+                    <td>Đến trang trại chăn nuôi / chợ buôn bán động vật sống / cơ sở giết mổ động vật / tiếp xúc động vật (*)</td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                </tr>
+                <tr>
+                    <td>Tiếp xúc gần (2m) với người mắc bệnh viêm đường gô hấp do nCoV (*) </td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                </tr>
+            </table>
+            <br>
+            <p>Chọn cơ sở cách ly (*)</p>
+            <input type="radio"> Cơ sở cách ly tập trung <br>
+            <input type="radio"> Cơ sở cách ly tự chọn <br>
+            <input type="radio"> Khác <br>
+            <div align="center">
+                <input type="submit" value="GỬI TỜ KHAI" >
+            </div>
+            
+        </form>
+    </div>
+
+</body>
+
+</html>
