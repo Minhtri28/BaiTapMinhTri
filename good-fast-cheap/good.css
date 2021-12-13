@@ -1,4 +1,4 @@
-<style media="screen">
+
 .switch {
     position: relative;
     display: inline-block;
@@ -16,7 +16,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: rgb(148, 255, 27);
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -49,4 +49,4 @@ input:checked+.slider::before {
     border-radius: 50%;
 }
 
-</style>
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 6</title>
+</head>
+<body>
+    <div align= "center">
+        <h2 style="color: green;"> Tính hoa hồng nhận được theo mức doanh số bán hàng</h2>
+        <label for="DoanhThu">Số Doanh Thu</label><input type="number" id="doanhthu">
+        <label for="HoaHong">Tỷ Lệ Hoa Hồng Theo %</label><input type="number" max="100" id="hoahong"><br><br>
+        <button onclick="bai6()" align ="center" style="color: blueviolet;">Tính Hoa Hồng</button>
+    </div>
+    <script>
+        function bai6() {
+           
+            let doangthu = Number(document.getElementById("doanhthu").value);
+            let hoaHong = Number(document.getElementById("hoahong").value);
+            alert("Hoa Hồng Là:"+(parseFloat(doangthu*hoaHong/100)));
+        }
+    </script>
+</body>
+</html>

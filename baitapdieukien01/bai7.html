@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 7</title>
+</head>
+
+<body>
+    <div align="center">
+        <h2 style="color: blueviolet;"> Tính Tiền Cước Điện Thoại</h2>
+        <label for="sophut"></label>Nhập Số Phút Gọi <input type="number"id="sophut">
+        <label for="tiencuoc"></label>Nhập Tiền Cước 1 Phút <input type="number" id="tiencuoc"><br><br>
+        <button onclick="tinh" style="color: crimson;">Tính Tiền Cước Gọi</button>
+    </div>
+    <script>
+        function tinh() {
+             sophut = Number(document.getElementById("sophut").value);
+             tiencuoc = Number(document.getElementById("tiencuoc").value);
+            alert("Tiền cước điện thoại là: "+ (sophut*tiencuoc));
+        }
+    </script>
+</body>
+
+</html>
