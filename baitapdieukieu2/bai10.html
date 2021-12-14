@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 10</title>
+</head>
+<body>
+    <script>
+        let KW = Number(prompt('Cap dien ap cua ban'))
+        let kWh = Number(prompt('Nhap so Kilowatt cua ban trong 1 thang'))
+        if (KW > 110) {
+            alert('Gia tien dien cua ban la ' + kWh*2700 + 'VND')
+        } else if ( KW > 22 && KW < 110) {
+            alert('gia tien dien cua ban la' + kWh*2800 + 'VND')
+        } else if (KW > 6 && KW < 22) {
+            alert('gia tien dien cua ban la ' + kWh*2900 + 'VND')
+        } else if (KW < 6) {
+            alert('gia tien dien cua ban la ' + kWh*3000 +'VND')
+        }
+    </script>
+</body>
+</html>

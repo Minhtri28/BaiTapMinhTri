@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 11</title>
+</head>
+<body>
+    <script>
+        let thue = Number(prompt('Nhap thu nhap cua ban trong 1 thang'))
+        if ( thue < 5) {
+            document.write('So thue cua ban la 5%')
+            document.write('so thue phai tra la:' + thue*5/100 + 'trieu VND')
+        } else if ( thue > 5 && thue < 10) {
+            document.write('So thue cua ban la 10%')
+            document.write('so thue phai tra la:' + thue*10/100 + 'trieu VND')
+        } else if ( thue > 10 && thue < 18) {
+            document.write('so thue cua ban la 15%')
+            document.write('so thue phai tra la:' + thue*15/100 + 'trieu VND')
+        } else if (thue > 18 && thue < 32) {
+            document.write('so thue cua ban la 20%')
+            document.write('so thue phai tra la:' + thue*20/100 + 'trieu VND')
+        } else if (thue > 32 && thue < 52) {
+            document.write('so thue cua ban la 25%')
+            document.write('so thue phai tra la:' + thue*25/100 + 'Trieu VND')
+        } else if (thue > 52 && thue < 80) {
+            document.write('so thue cua ban la 30%')
+            document.write('so thue phai tra la:' + thue*30/100 + 'trieu VND')
+        } else if ( thue > 80) {
+            document.write('so thue cua ban la 35%')
+            document.write('so thue phai tra la' + thue*35/100 + 'trieu VND')
+        }
+
+
+    </script>
+</body>
+</html>

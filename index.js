@@ -26,3 +26,24 @@
     // } if (DTB > 5) {
     //     console.log('Trung Binh');
     // } 
+//  for (var i = 5,count = 1; i < 100 && count < 10; i+=5, count++) {
+//      console.log(i);
+
+//  }
+//  console.log(count)
+//  var count = 0
+//  while (count < 100) {
+//      console.log(count)
+//      count++
+//  }
+//  console.log(count)
+
+// let number = +prompt("Enter number :")
+// while (number !=0 ) {
+
+//     document.write(number)
+//     number = +prompt('enter number :')
+// }node 
+// for (var i = 0; i < 10; i++) {
+//     console.log(i);
+// } 

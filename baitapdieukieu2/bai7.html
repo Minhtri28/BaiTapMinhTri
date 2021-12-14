@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 7</title>
+</head>
+
+<body>
+    <script>
+        let a = Number(prompt('Nhap a'))
+        let b = Number(prompt('Nhap b'))
+        let c = Number(prompt('Nhap c'))
+        let A = Math.pow(b ^ 2) - 4 * a * c;
+        if (a == 0) {
+            document.write('a phai khac khong');
+        } else if (A == 0) {
+            document.write('Phuong trinh co nghiem kep x1 = x2' + -b / 2 * a);
+        } else if (A < 0) {
+            document.write("phuong trinh vo nghiem");
+        } else if (A > 0) {
+            document.write('phuong trinh co 2 nghiem rieng biet' + "</br>");
+            document.write('nghiem 1 ' + (-b + Math.sqrt(A)) / (2 * a) + '</br>');
+            document.write('nghiem 2 ' + (-b - Math.sqrt(A)) / (2 * a));
+        }
+    </script>
+</body>
+
+</html>
