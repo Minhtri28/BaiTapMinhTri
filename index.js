@@ -47,3 +47,26 @@
 // for (var i = 0; i < 10; i++) {
 //     console.log(i);
 // } 
+// let i = 0;
+// while (i < 3) {
+//     console.log("hi");
+//     i++;
+// }
+// let x = 3;
+
+// let i = 0;
+// while (i < 3) {
+//     x += 1;
+//     i += 1;
+// }
+// console.log(x)
+// let i = 3;
+// while (i < 6) {
+//     console.log(i);
+//     i += 1;
+// }
+// let i = 0;
+// while (i < 3) {
+//     console.log(i);
+//     i++;
+// }
