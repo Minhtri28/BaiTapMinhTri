@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 05. tinh tong của Fib</title>
+</head>
+
+<body>
+    <script>
+        var fib = [0, 1];
+        let count = 0;
+        for (var i = fib.length; i < 20; i++) {
+            fib[i] = fib[i - 2] + fib[i - 1];
+            count++;
+        }
+        console.log(fib);
+        let sum = 0
+        for (let i = 0; i < fib.length; i++) {
+            sum += parseInt(fib[i], 10)
+        }
+        console.log('Tổng của fib là :' + sum)
+    </script>
+</body>
+
+</html>

@@ -70,3 +70,16 @@
 //     console.log(i);
 //     i++;
 // }
+// let a = [1,2,3,4,5,6,7,8,9,10]
+// // let b;
+    // for(b=0; b<a.length;b++) {
+    //     console.log(a)
+    // }
+// let a = new Array [1,2,3,4,5,6,7,8,9,10]
+// let a = [1,2,3,4,5];
+// let b = 0;
+// while (b < a.length) {
+//     console.log(b)
+//     b++
+    
+// }
