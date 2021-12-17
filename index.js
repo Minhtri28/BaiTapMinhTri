@@ -83,3 +83,34 @@
 //     b++
     
 // }
+// let diemToan = Number(prompt('Nhập điểm toán'))
+// let diemLy = Number(prompt('Nhập điểm lý'))
+// let diemHoa = Number(prompt('Nhập điểm hóa'))
+// let average = ( diemToan + diemLy + diemHoa) / 3
+// alert(average)
+// let dollar = Number(prompt('Nhập số Dollar'))
+// let v = dollar * 23000
+// alert('Số tiền VND là ' + v)
+// let a = Number(prompt('nhập giá trị a'))
+// let b = Number(prompt('Nhập giá trị b'))
+// let c = Number(prompt('nhập giá trị c'))
+// if ( a > b && a > c ) {
+//     alert(' a là giá trị lớn nhất')
+// } else if ( b > a && b > c) {
+//     alert('b là giá trị lớn nhất')
+// } else if ( c > b && c > a ) {
+//     alert('c la giá trị lớn nhất')
+// }
+// let diemSo = Number(prompt('Nhập điểm số của bạn'))
+// // if ( diemSo >= 75) {
+// //     alert('Bạn là Loại A')
+// // } else if (60 >= diemSo < 75) {
+// //     alert('Bạn là loại B')
+// // } else if ( 45 >= diemSo < 60) {
+// //     alert('Bạn là Loại C')
+// // } else if ( 35 >= diemSo < 45) {
+// //     alert('Bạn là loại D')
+// // } else if (diemSo < 35) {
+// //     alert('Bạn là Loại E')
+// // }
+// alert(diemSo > 75 ? "Loại A" : (diemSo > 60  ? "Loại B" : ( diemSo > 45  ? "Loại C" : (diemSo > 35 ? "loại D" : (diemSo < 35 ? "loại E" : "")))))
