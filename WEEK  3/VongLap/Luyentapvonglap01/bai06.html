@@ -9,9 +9,17 @@
 <body>
     
     <script>
-    for (let i = 0; i <= 30; i++) {
-        console.log(i)
-    }
+        let number = '' 
+        function totaldivSeven() {
+            var total = 0
+            for (var i = 0; i < 30; i ++) {
+                total += (7 % i != 0)
+            }
+            console.log(total)
+        }
+        totaldivSeven()
+        
+    
         
     </script>
    
