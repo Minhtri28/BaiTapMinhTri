@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai01</title>
+</head>
+
+<body>
+    <script>
+        
+        let n = prompt("Nhập số lượng số Finbonancci đầu tiên cần hiển thị :")
+        let fib = ``;
+
+        function Fibonancci(n) {
+            if (n < 2) {
+                return 1;
+            } else {
+                return Fibonancci(n - 2) + Fibonancci(n - 1);
+            }
+        }
+
+        function display() {
+
+            for (var i = 1; i <= n; i++) {
+                fib += `${Fibonancci(i)} ;`;
+            }
+            alert(fib);
+        }
+        display();
+</body>
+
+</html>

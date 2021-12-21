@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>
+                <label for="tiengui"> Số tiền gửi vào ngân hàng :</label>
+            </th>
+            <td>
+                <input type="text" value="" id="tiengui">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="laisuat"> Lãi suất (%) :</label>
+            </th>
+            <td>
+                <input type="text" value="" id="laisuat">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label for="thanggui"> Số tháng gửi :</label>
+            </th>
+            <td>
+                <input type="text" name="" id="thanggui">
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <input type="button" value="Kết Quả" onclick="cal()">
+                <h3 id="result"></h3>
+            </th>
+        </tr>
+        
+    </table>
+    <script>
+        let res = document.getElementById("result");
+        function cal() {
+            let tiengui = parseFloat(document.getElementById("tiengui").value);
+            let laisuat = parseFloat(document.getElementById("laisuat").value);
+            let thanggui = parseFloat(document.getElementById("thanggui").value);
+            let result = 0
+            if (isNaN(tiengui)||isNaN(laisuat)||isNaN(thanggui)) {
+                res.innerHTML = " input must be a number "
+            } else {
+                result = a*(Math.pow((1 + laisuat),n));
+                res.innerHTML = result;
+            }
+        }
+    </script>
+</body>
+
+    
+    <br>
+    
+    
+    <br>
+    
+
+    <br>
+    
+    
+
+</html>
