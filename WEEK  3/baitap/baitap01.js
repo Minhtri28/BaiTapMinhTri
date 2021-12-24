@@ -1,7 +1,4 @@
-function main() {
-    let size = 5;
-    let min = 10;
-    let max = 90;
+(function star(){
     let matrix = generateMatrix(size, min, max);
     printMatrix(matrix);
     document.write(`Tổng các số chẵn trong ma trận: ${totalEvenValues(matrix)} <br>`);
@@ -12,7 +9,8 @@ function main() {
     document.write(`-------------------------------<br>`);
     printSecondaryMatrix(matrix);
 }
-main();
+}
+)()
 
 function generateMatrix(size, min, max) {
     let matrix = [];
@@ -26,16 +24,14 @@ function generateMatrix(size, min, max) {
     return matrix;
 }
 
-function isEvenValue(number) {
-    return number % 2 == 0;
-}
+
 
 function totalEvenValues(matrix) {
     let size = matrix.length;
     let total = 0;
     for (let i = 0; i < size; i++) {
         for (let j = 0; j < size; j++) {
-            if (isEvenValue(matrix[i][j])) {
+            if (isEvenValue(matrix[i][j]  % 2 == 0)) {
                 total += matrix[i][j];
             }
         }

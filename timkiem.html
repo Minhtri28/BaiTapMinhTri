@@ -1,15 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+
+<body style="text-align: center;">
+    <!-- <h1>Đăng Nhập Vào Trang</h1>
     <form action="">
-        <input type="text">
-        <input type="submit" value="Tìm Kiếm">
-    </form>
+        <label> Nhập tài khoản</label>
+        <input type="text" placeholder="Nhập Tên Tài Khoản
+        ">
+        <br>
+        <label>Nhập Mật Khẩu</label>
+        <input type="password" id="pass" placeholder="Nhập Mật Khẩu">
+        <br>
+        <input type="submit" value="Đăng Nhập" id="sub">
+    </form> -->
+    <script>
+        let person = {
+            name: {
+                first: 'Bob',
+                last: 'Smith'
+
+            },
+            age: 32,
+            gender: 'male',
+            interests: ['music', 'skiing'],
+            bio: function () {
+                alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + 'year old. He likes' + this
+                    .interests[0] + 'and' + this.interests[1] + '.');
+            },
+            greeting: function () {
+                alert('Hi! Im ' + this.name[0] + '.')
+            }
+        }
+        
+
+        // person.bio()
+        // person.greeting()
+        //    alert(person.interests)
+        //    alert(person['name']['last']= "Tri")
+        // person['eyes'] = 'Xanh';
+        // person.farewell = function() {alert("Bye evertybody!");}
+        // person['eyes']
+        // person.farewell()
+        // let myDataName = 'height';
+        // let myDataValue = '1.75m';
+        // person[myDataName] = myDataValue;
+        // console.log(person.height)
+        greeting: function() {
+            alert('Hi! I/m' + this.name.first + '.');
+        }
+        
+    </script>
 </body>
+
 </html>

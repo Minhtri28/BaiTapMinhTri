@@ -2,8 +2,8 @@ let max = 40;
 let min = 10;
 let arrs = [];
 let sum = 0;
-let tich = 0;
-let size = 5;
+let tich = 1;
+let size = 2;
 for (let n = 0; n < size; n++) {
     let arr2 = [];
     for( let j = 0; j < size; j++) {
@@ -20,9 +20,9 @@ for (let i = 0; i < arrs.length; i++) {
 }
 console.log(sum)
 
-// for(let i = 0; i < arrs.length; i++) {
-//     for (let j = 0; j < arrs.length; j ++) {
-//         tich *= (arrs[i][j])
-//     }
-// } 
-// console.log(tich)
+for (let i = 0 ; i < arrs.length; i++) {
+    for (let j = 0; j < arrs.length; j++) {
+        tich *= parseInt(arrs[i][j])
+    }
+}
+console.log(tich);
